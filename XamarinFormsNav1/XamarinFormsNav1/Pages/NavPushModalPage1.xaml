@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsNav1.Pages.NavPushModalPage1">
+  <Grid HorizontalOptions="Center" VerticalOptions="Center">
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    
+    <Button x:Name="ButtonGoBack" Text="Go Back" Grid.Row="2" Clicked="ButtonGoBack_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" HeightRequest="40"/>
+    
+    <Button x:Name="ButtonNavToMainPage" Text="Navigate To Main Page" Grid.Row="3" Clicked="ButtonNavToMainPage_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="150" HeightRequest="40"/>
+  </Grid>
+</ContentPage>

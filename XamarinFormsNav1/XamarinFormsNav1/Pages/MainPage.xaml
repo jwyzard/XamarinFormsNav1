@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsNav1.Pages.MainPage">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <Button x:Name="ButtonNavPush" Text="Navigation Push Async" Grid.Row="0" Clicked="ButtonNavPush_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="40"/>
+
+    <Button x:Name="ButtonNavPushModal" Text="Navigation Push Modal" Grid.Row="1" Clicked="ButtonNavPushModal_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="40"/>
+
+    <Button x:Name="ButtonCtrlFullScreen" Text="Control Full Screen" Grid.Row="2" Clicked="ButtonCtrlFullScreen_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="40"/>
+
+    <Button x:Name="ButtonCtrlPartialScreen" Text="Control Partial Screen" Clicked="ButtonCtrlPartialScreen_Clicked" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="40"/>
+
+    <Button x:Name="ButtonCtrlFullScreenUsingXaml" Text="Control Full Screen Using Xaml" Grid.Row="4" Clicked="ButtonCtrlFullScreenUsingXaml_Clicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250" HeightRequest="40"/>
+
+    <StackLayout Orientation="Horizontal" Grid.Row="5" HorizontalOptions="Center" VerticalOptions="Center">
+      <Label Text="Navigation Stack Count:"/>
+      <Label x:Name="LabelNavStackCount" />
+    </StackLayout>
+
+    <StackLayout Orientation="Horizontal" Grid.Row="6" HorizontalOptions="Center" VerticalOptions="Center">
+      <Label Text="Modal Stack Count:"/>
+      <Label x:Name="LabelModalStackCount" />
+    </StackLayout>
+  </Grid>
+</ContentPage>
